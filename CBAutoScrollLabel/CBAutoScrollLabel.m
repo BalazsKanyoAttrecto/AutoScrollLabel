@@ -40,19 +40,6 @@ static void each_object(NSArray *objects, void (^block)(id object))
 
 @implementation CBAutoScrollLabel
 
-@synthesize scrollDirection = _scrollDirection;
-@synthesize pauseInterval = _pauseInterval;
-@synthesize labelSpacing;
-@synthesize scrollSpeed = _scrollSpeed;
-@synthesize text;
-@synthesize labels;
-@synthesize mainLabel;
-@synthesize animationOptions;
-@synthesize shadowColor;
-@synthesize shadowOffset;
-@synthesize textAlignment;
-@synthesize scrolling = _scrolling;
-
 - (id)initWithCoder:(NSCoder *)aDecoder
 {
     if ((self = [super initWithCoder:aDecoder]))
