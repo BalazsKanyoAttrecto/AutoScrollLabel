@@ -33,15 +33,16 @@
     self.autoScrollLabel.fadeLength = 12.f;
     self.autoScrollLabel.scrollDirection = CBAutoScrollDirectionLeft;
     [self.autoScrollLabel observeApplicationNotifications];
+    [self.autoScrollLabel scrollLabelIfNeeded];
     
-    // navigation bar auto scroll label
-    self.navigationBarScrollLabel.text = @"Navigation Bar Title... Scrolling... And scrolling.";
-    self.navigationBarScrollLabel.pauseInterval = 3.f;
-    self.navigationBarScrollLabel.font = [UIFont boldSystemFontOfSize:20];
-    self.navigationBarScrollLabel.textColor = [UIColor whiteColor];
-    self.navigationBarScrollLabel.shadowOffset = CGSizeMake(-1, -1);
-    self.navigationBarScrollLabel.shadowColor = [UIColor blackColor];
-    [self.navigationBarScrollLabel observeApplicationNotifications];
+//    // navigation bar auto scroll label
+//    self.navigationBarScrollLabel.text = @"Navigation Bar Title... Scrolling... And scrolling.";
+//    self.navigationBarScrollLabel.pauseInterval = 3.f;
+//    self.navigationBarScrollLabel.font = [UIFont boldSystemFontOfSize:20];
+//    self.navigationBarScrollLabel.textColor = [UIColor whiteColor];
+//    self.navigationBarScrollLabel.shadowOffset = CGSizeMake(-1, -1);
+//    self.navigationBarScrollLabel.shadowColor = [UIColor blackColor];
+//    [self.navigationBarScrollLabel observeApplicationNotifications];
 }
 
 @end
